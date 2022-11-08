@@ -21,6 +21,12 @@ w_ppss=1
 #station name
 stations = ["C008",]
 
+datapath="../data/"
+
+
+# store RF files in datapath as "RF_"+station+".QHD" or adapt stationfile variable in HK_classic.py:22 to your needs
+
+
 search_range_dict={}
 
 # set search area to default value for all stations

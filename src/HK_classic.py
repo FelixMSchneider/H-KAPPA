@@ -18,9 +18,10 @@ for station in stations:
 
     opath = "../output/"+station+"/" 
     os.system("mkdir -p "+ opath)
+
+    stationfile="RF_"+station+".QHD"
     
-    
-    st=rf.read_rf("../data/RF_"+station+".QHD")
+    st=rf.read_rf(datapath +"/"+ stationfile)
     st.trim2(0, 90, 'onset')
     
     
